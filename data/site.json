@@ -19,8 +19,8 @@
   "services": [
     {
       "id": "weather",
-      "name": "기상허브",
-      "nameEn": "Weather Data Hub",
+      "name": "누니날씨",
+      "nameEn": "nuni weather",
       "url": "https://weather.nuni.co.kr",
       "host": "weather.nuni.co.kr",
       "status": "live",

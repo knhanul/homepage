@@ -9,7 +9,7 @@ nuni 브랜드 소개, 제품 안내, 다운로드 링크, 운영 중인 서비�
 ```
 homepage/
 ├─ data/                  ← 내용은 여기만 고치면 됩니다
-│  ├─ site.json           사이트 이름·한 줄 소개·문의처·서비스(기상허브, 파일 저장소)
+│  ├─ site.json           사이트 이름·한 줄 소개·문의처·서비스(누니날씨, 파일 저장소)
 │  ├─ products.json       제품 목록과 상세 내용(소개, 주요 기능, 스크린샷, 지원 환경)
 │  ├─ downloads.json      다운로드 버튼 주소 (한 파일에 모음)
 │  └─ news.json           소식 목록
@@ -112,7 +112,7 @@ ssh -i ~/.ssh/id_ed25519_weatherhub root@74.208.148.96 \
   - 없는 주소는 `404.html`
 - 기본 서버: `/etc/nginx/sites-available/00-default-catchall` (원본: `deploy/nginx/00-default-catchall`)
   - 등록되지 않은 호스트명은 HTTP 444(응답 없음), HTTPS는 핸드셰이크 거부
-- 같은 서버의 `weather.nuni.co.kr`(기상허브)은 그대로 운영됩니다.
+- 같은 서버의 `weather.nuni.co.kr`(누니날씨)은 그대로 운영됩니다.
 
 nginx 설정을 바꿀 때는 항상 `nginx -t`로 검사한 뒤 `systemctl reload nginx` 하세요.
 

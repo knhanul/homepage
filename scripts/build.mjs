@@ -319,7 +319,7 @@ for (const p of products) {
   }).join('')}</div>
   <p class="hint center">저장소(repo.nuni.co.kr)는 로그인한 사용자만 이용할 수 있습니다.</p>
 </div></section>`;
-  pages['/services/'] = layout({ path: '/services/', title: '서비스', description: '기상허브(weather.nuni.co.kr), nuni 파일 저장소 등 nuni가 운영하는 온라인 서비스 안내입니다.', body });
+  pages['/services/'] = layout({ path: '/services/', title: '서비스', description: '누니날씨(weather.nuni.co.kr), nuni 파일 저장소 등 nuni가 운영하는 온라인 서비스 안내입니다.', body });
 }
 
 // 다운로드
@@ -359,7 +359,7 @@ for (const p of products) {
   const counts = categories.map((c) => ({ ...c, list: products.filter((p) => p.category === c.id) }));
   const principles = [
     { icon: 'shield', title: '내 데이터는 내 기기에서', text: 'nuni player는 사용자가 가진 로컬 파일만 재생하고, GPX Viewer는 파일을 서버로 보내지 않고 브라우저 안에서만 분석합니다.' },
-    { icon: 'check', title: '있는 그대로의 데이터', text: '기상허브는 관측값이 없는 강수를 0으로 바꾸지 않고, 비어 있는 구간을 그대로 보여 줍니다.' },
+    { icon: 'check', title: '있는 그대로의 데이터', text: '누니날씨는 관측값이 없는 강수를 0으로 바꾸지 않고, 비어 있는 구간을 그대로 보여 줍니다.' },
     { icon: 'globe', title: '한국어 우선', text: '메뉴와 안내를 한국어로 먼저 만들고, 한글(HWP/HWPX) 문서 같은 국내 환경을 함께 고려합니다.' }
   ];
   const body = `${pageHead('About', 'nuni 소개', site.description)}

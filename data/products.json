@@ -187,16 +187,16 @@
     },
     {
       "slug": "weather",
-      "name": "기상허브",
-      "nameEn": "Weather Data Hub",
+      "name": "누니날씨",
+      "nameEn": "nuni weather",
       "category": "web",
       "featured": true,
       "order": 5,
       "icon": "weather",
-      "tone": "navy",
+      "tone": "blue",
       "tagline": "공식 ASOS 관측 자료를 한 곳에서 수집·조회·다운로드하는 기상데이터 플랫폼",
       "summary": [
-        "기상청 공식 ASOS 관측 자료를 한 곳에서 수집하고 표준화해 제공하는 공통 기상데이터 허브입니다. 업무시스템(구내식당 등)은 기상청이 아니라 이 허브의 API만 호출합니다.",
+        "기상청 공식 ASOS 관측 자료를 한 곳에서 수집하고 표준화해 제공하는 공통 기상데이터 플랫폼입니다. 업무시스템(구내식당 등)은 기상청이 아니라 누니날씨의 API만 호출합니다.",
         "관측값이 없는 강수를 0으로 바꾸지 않고 빈 구간을 그대로 보여 주는 등, 원본 관측 자료를 정직하게 다루는 것을 원칙으로 합니다."
       ],
       "features": [
@@ -208,8 +208,8 @@
         { "title": "업무시스템용 API", "text": "구내식당·시설·에너지 등 다른 시스템은 HTTP 조회 API만 호출합니다." }
       ],
       "screenshots": [
-        { "src": "/assets/img/products/weather-dashboard.webp", "width": 1280, "height": 800, "alt": "기상허브 대시보드: 지점별 상태 카드와 최근 3일 기온·강수 그래프", "caption": "대시보드" },
-        { "src": "/assets/img/products/weather-gaps.webp", "width": 1280, "height": 800, "alt": "기상허브 미적재 현황 화면: 지점별 적재율과 미적재 구간 목록", "caption": "미적재 현황" }
+        { "src": "/assets/img/products/weather-dashboard.webp", "width": 1280, "height": 800, "alt": "누니날씨 대시보드: 지점별 상태 카드와 최근 3일 기온·강수 그래프", "caption": "대시보드" },
+        { "src": "/assets/img/products/weather-gaps.webp", "width": 1280, "height": 800, "alt": "누니날씨 미적재 현황 화면: 지점별 적재율과 미적재 구간 목록", "caption": "미적재 현황" }
       ],
       "platforms": [
         "웹 브라우저 (PC)",
