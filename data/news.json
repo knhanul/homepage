@@ -1,0 +1,45 @@
+{
+  "_comment": "소식 목록입니다. 새 소식은 items 맨 위에 추가하세요. date는 YYYY-MM-DD(한국 시간), product는 관련 제품 slug(없으면 빈 문자열)입니다.",
+  "items": [
+    {
+      "date": "2026-09-26",
+      "tag": "서비스",
+      "product": "weather",
+      "title": "기상허브에 관측지점별 미적재 현황과 자료수집 화면을 추가했습니다",
+      "body": "관측지점별로 저장되지 않은 시각·날짜를 구간으로 보여 주고, 필요한 구간만 골라 수집할 수 있습니다. 조회와 자료수집 메뉴를 나누고, 대시보드에 지점·기간 선택과 기온/강수 그래프, 지점별 상태 카드를 더했습니다.",
+      "link": "https://weather.nuni.co.kr"
+    },
+    {
+      "date": "2026-09-26",
+      "tag": "브랜드",
+      "product": "",
+      "title": "nuni 공식 로고와 앱 아이콘을 공개했습니다",
+      "body": "영문·한글 로고와 앱 아이콘을 기본(블루)과 오렌지 두 가지 테마로 정리해 공개했습니다. SVG·PNG와 Windows용 ICO, 44·50·150·300px 규격을 함께 제공합니다.",
+      "link": "https://github.com/knhanul/Logo"
+    },
+    {
+      "date": "2026-09-24",
+      "tag": "업데이트",
+      "product": "nuniplayer",
+      "title": "nuni player에 가사·자막 표시 기능을 추가했습니다",
+      "body": "음악과 같은 이름의 LRC 가사, 동영상과 같은 이름의 SRT 자막 파일을 자동으로 인식해 표시합니다. 가사·자막은 사용자가 가진 로컬 파일만 읽습니다.",
+      "link": ""
+    },
+    {
+      "date": "2026-09-20",
+      "tag": "신규",
+      "product": "nuniplayer",
+      "title": "nuni player 소스를 공개했습니다",
+      "body": "카페·피트니스센터·아파트 커뮤니티 시설에서 로컬 음악/동영상 파일을 끊김 없이 틀어 두기 위한 Windows 프로그램입니다.",
+      "link": "https://github.com/knhanul/nuniplayer"
+    },
+    {
+      "date": "2026-09-18",
+      "tag": "서비스",
+      "product": "weather",
+      "title": "기상허브를 weather.nuni.co.kr에서 운영하기 시작했습니다",
+      "body": "기상청 공식 ASOS 관측 자료를 한 곳에서 수집하고, 업무시스템은 허브의 조회 API만 호출하는 구조입니다.",
+      "link": "https://weather.nuni.co.kr"
+    }
+  ]
+}

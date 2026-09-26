@@ -1,0 +1,50 @@
+{
+  "_comment": "다운로드 버튼 주소를 모아 둔 파일입니다. 저장소에 공개 공유 링크나 '최신 버전 받기' 공개 주소가 생기면 각 항목의 url만 바꾸면 됩니다.",
+  "defaultUrl": "https://repo.nuni.co.kr/",
+  "buttonLabel": "저장소에서 받기",
+  "notice": "설치 파일은 nuni 파일 저장소(repo.nuni.co.kr)에서 제공합니다. 저장소는 로그인이 필요합니다.",
+  "items": [
+    {
+      "product": "nuniplayer",
+      "platform": "Windows 10/11 (x64)",
+      "format": "설치 프로그램 / 폴더형 배포",
+      "note": "코드 서명 전 빌드라 Windows SmartScreen 경고가 보일 수 있습니다. WebView2 Runtime이 필요합니다.",
+      "url": "https://repo.nuni.co.kr/"
+    },
+    {
+      "product": "studio",
+      "platform": "Windows (x64)",
+      "format": "설치 프로그램 / 포터블",
+      "note": "코드 서명 전 빌드라 SmartScreen 경고가 보일 수 있습니다.",
+      "url": "https://repo.nuni.co.kr/"
+    },
+    {
+      "product": "note",
+      "platform": "Windows 데스크톱",
+      "format": "",
+      "note": "",
+      "url": "https://repo.nuni.co.kr/"
+    },
+    {
+      "product": "nunimemo",
+      "platform": "Windows 데스크톱",
+      "format": "",
+      "note": "Google Drive 동기화를 쓰려면 Google Drive API 인증 정보가 필요합니다.",
+      "url": "https://repo.nuni.co.kr/"
+    },
+    {
+      "product": "nunidesk",
+      "platform": "Windows 10/11",
+      "format": "실행 파일(폴더형)",
+      "note": "",
+      "url": "https://repo.nuni.co.kr/"
+    },
+    {
+      "product": "track",
+      "platform": "Android",
+      "format": "APK",
+      "note": "iOS 버전은 아직 배포하지 않습니다.",
+      "url": "https://repo.nuni.co.kr/"
+    }
+  ]
+}

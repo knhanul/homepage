@@ -1,0 +1,282 @@
+{
+  "_comment": "제품 목록입니다. 문구는 각 제품 저장소의 README에 적힌 내용만 옮겼습니다. category: desktop | mobile | web. featured: true면 홈 화면 대표 제품 카드에 나옵니다(order 순서). 다운로드 주소는 downloads.json에서 관리합니다.",
+  "categories": [
+    { "id": "desktop", "name": "데스크톱", "sub": "Windows", "description": "Windows PC에서 설치해 쓰는 프로그램" },
+    { "id": "mobile", "name": "모바일", "sub": "Android · iOS", "description": "스마트폰에서 쓰는 네이티브 앱" },
+    { "id": "web", "name": "웹 서비스", "sub": "Browser", "description": "브라우저에서 바로 쓰는 서비스와 웹 앱" }
+  ],
+  "items": [
+    {
+      "slug": "nuniplayer",
+      "name": "nuni player",
+      "category": "desktop",
+      "featured": true,
+      "order": 1,
+      "icon": "play",
+      "tone": "orange",
+      "tagline": "매장에서 직접 보유한 음악·영상을 끊김 없이 틀어 두는 Windows 플레이어",
+      "summary": [
+        "카페·피트니스센터·아파트 커뮤니티 시설에서 직접 보유한 로컬 음악/동영상 파일을 끊김 없이 틀어 두기 위한 Windows 프로그램입니다. YouTube 재생·다운로드는 없습니다.",
+        "기본 화면은 동영상 중심 UI입니다. 재생 중인 영상은 앱 안의 전용 영상 영역에 표시되고, 오디오 파일은 같은 영역에 LRC 가사를 여러 줄로 보여 줍니다. 설정에서 오디오 전용 모드를 선택할 수 있습니다."
+      ],
+      "features": [
+        { "title": "이어서 자동 재생", "text": "시작하면 마지막으로 재생하던 재생목록·곡·위치에서 이어서 재생합니다. 창을 최소화해도 재생은 유지됩니다." },
+        { "title": "폴더 기반 재생목록", "text": "폴더를 고르면 영상·음악 파일로 재생목록을 자동으로 만들고, 같은 폴더는 기존 순서·제외 상태를 다시 씁니다." },
+        { "title": "시간대별 예약 재생", "text": "요일·시작·종료 시각을 정해 영업 시작 시 재생, 종료 시 정지합니다." },
+        { "title": "크로스페이드·음량 균일화", "text": "0/3/5/10초 크로스페이드와 곡별 음량 균일화(FFmpeg loudnorm 분석, 원본 파일은 수정하지 않음)를 지원합니다." },
+        { "title": "안내방송", "text": "음악을 줄였다가 안내방송 후 원래 위치로 돌아옵니다. 실패해도 음악은 유지됩니다." },
+        { "title": "가사·자막 표시", "text": "같은 이름의 LRC 가사와 SRT 자막을 자동 인식하고, 도구 창에서 싱크 조정·편집·LRC↔SRT 변환을 할 수 있습니다." },
+        { "title": "운영 안정성", "text": "오류 파일은 건너뛰고, 비정상 종료 복구와 장시간 재생 감시(정체 시 재시작 → 다음 곡 → 정지)로 무한 반복을 막습니다." },
+        { "title": "관리자 PIN 잠금·트레이", "text": "관리자 PIN(PBKDF2 해시로만 저장)으로 잠그고, 시스템 트레이에서 재생·일시정지·다음 곡을 조작합니다." }
+      ],
+      "screenshots": [
+        { "src": "/assets/img/products/nuniplayer-main.webp", "width": 1266, "height": 793, "alt": "nuni player 메인 화면: 왼쪽 동영상 영역과 재생 컨트롤, 오른쪽 재생목록", "caption": "동영상 중심 메인 화면 (샘플 파일)" }
+      ],
+      "platforms": [
+        "Windows 10/11 x64",
+        "Microsoft Edge WebView2 Runtime",
+        "VideoLAN VLC (libVLC + plugins, 배포본에 함께 포함)"
+      ],
+      "notes": [
+        "빌드는 기본적으로 코드 서명되지 않아 Windows 스마트 앱 컨트롤·SmartScreen 경고가 표시될 수 있습니다.",
+        "가사·자막은 사용자가 보유한 로컬 파일만 읽으며, 인터넷에서 검색·다운로드하지 않습니다."
+      ],
+      "source": "https://github.com/knhanul/nuniplayer"
+    },
+    {
+      "slug": "studio",
+      "name": "NUNI Studio",
+      "category": "desktop",
+      "featured": true,
+      "order": 2,
+      "icon": "film",
+      "tone": "violet",
+      "tagline": "한국어 UI와 JSON 프리셋 이펙트 엔진을 갖춘 Windows 동영상 편집기",
+      "summary": [
+        "NUNI Studio는 Windows 데스크톱에서 동작하는 종합 동영상 편집기입니다. 한국어 UI와 직관적인 5영역 레이아웃으로 초보자도 쉽게 시작할 수 있습니다.",
+        "필터·전환·텍스트 애니메이션·오버레이·스티커는 모두 JSON 프리셋으로 정의되어 있어 계속 추가할 수 있고, 미리보기와 최종 렌더링(FFmpeg)이 같은 효과 정의로 동작합니다."
+      ],
+      "features": [
+        { "title": "타임라인 편집", "text": "비디오/오디오/자막/효과 4트랙, 클립 추가·분할·삭제, 줌 인아웃, 재생 헤드를 지원합니다." },
+        { "title": "자막", "text": "크기·색상·배경·위치·외곽선·그림자를 지정하고 텍스트 애니메이션을 적용합니다." },
+        { "title": "이펙트 라이브러리", "text": "필터 10, 전환 7, 텍스트 6, 오버레이 6, 스티커 4종을 카테고리 탭과 검색으로 찾습니다." },
+        { "title": "키프레임·그래프 에디터", "text": "투명도·음량·위치·크기·회전 등을 시간에 따라 움직이고, 베지어 곡선을 그래프로 편집합니다." },
+        { "title": "모션 트래킹·크로마키", "text": "색상 기반 모션 트래킹(ROI·스무딩)과 그린 스크린 합성을 미리보기와 내보내기에 모두 반영합니다." },
+        { "title": "AI 기능", "text": "OpenAI Whisper API 기반 자동 자막과 이미지·비디오 배경 제거를 제공합니다." },
+        { "title": "MP4 내보내기", "text": "720p/1080p, 30/60fps, 비트레이트를 고르고 GPU 인코더(NVENC·QSV·AMF)를 자동 감지합니다." },
+        { "title": "플랫폼 프리셋", "text": "YouTube 1080p/4K, Instagram 피드/Reels, TikTok, X 프리셋을 한 번에 적용합니다." }
+      ],
+      "screenshots": [],
+      "platforms": [
+        "Windows (x64) — NSIS 설치 프로그램 / 포터블 실행 파일",
+        "FFmpeg 내장 (별도 설치 불필요)"
+      ],
+      "notes": [
+        "코드 서명과 자동 업데이트는 아직 적용되지 않았습니다.",
+        "일부 전환 효과는 현재 내보내기에서 페이드/디졸브 위주로 렌더링됩니다."
+      ],
+      "source": "https://github.com/knhanul/Studio"
+    },
+    {
+      "slug": "note",
+      "name": "Nuni Note",
+      "category": "desktop",
+      "featured": true,
+      "order": 3,
+      "icon": "note",
+      "tone": "blue",
+      "tagline": "사이드바 → 노트 목록 → 편집기, 3단 구성의 데스크톱 노트 앱",
+      "summary": [
+        "PyQt6/QML로 만든 데스크톱 노트 앱입니다. 'Notion + iOS + 금융 앱'을 디자인 철학으로, 신뢰감을 주는 블루 팔레트와 부드러운 곡선, 명확한 정보 구조를 지향합니다."
+      ],
+      "features": [
+        { "title": "3단 레이아웃", "text": "사이드바 → 노트 목록 → 편집기로 이어지는 구성입니다." },
+        { "title": "글래스 UI", "text": "블러 효과의 글래스 카드, 부드러운 그림자, 24px 이상의 둥근 모서리를 사용합니다." },
+        { "title": "알약형 편집 툴바", "text": "편집기 상단의 필(pill) 스타일 툴바와 블루 그라데이션 선택 표시를 제공합니다." },
+        { "title": "HWP/HWPX 가져오기", "text": "한글(HWP/HWPX) 문서를 마크다운으로 가져오며, 실패해도 앱이 멈추지 않습니다." }
+      ],
+      "screenshots": [],
+      "platforms": [
+        "Windows 데스크톱",
+        "PyQt6 6.5+ / Qt 6.5+"
+      ],
+      "notes": [],
+      "source": "https://github.com/knhanul/Note"
+    },
+    {
+      "slug": "nunimemo",
+      "name": "누니메모",
+      "nameEn": "NuniMemo",
+      "category": "desktop",
+      "featured": false,
+      "order": 7,
+      "icon": "memo",
+      "tone": "teal",
+      "tagline": "폴더로 정리하고 Google Drive로 동기화하는 데스크톱 메모 앱",
+      "summary": [
+        "PySide6 기반의 데스크톱 메모 관리 애플리케이션입니다. 리치 텍스트로 메모를 쓰고, 계층형 폴더로 정리하며, Google Drive와 동기화합니다."
+      ],
+      "features": [
+        { "title": "WYSIWYG 에디터", "text": "리치 텍스트 편집을 지원합니다." },
+        { "title": "폴더 관리", "text": "계층적 폴더 구조로 메모를 정리합니다." },
+        { "title": "Google Drive 동기화", "text": "클라우드 동기화를 지원합니다." },
+        { "title": "이미지 지원", "text": "이미지를 삽입하고 크기를 조정합니다." }
+      ],
+      "screenshots": [],
+      "platforms": [
+        "Windows 데스크톱",
+        "Google Drive API 인증 정보 (동기화 사용 시)"
+      ],
+      "notes": [],
+      "source": "https://github.com/knhanul/NuniMemo"
+    },
+    {
+      "slug": "nunidesk",
+      "name": "NuniDesk",
+      "category": "desktop",
+      "featured": true,
+      "order": 6,
+      "icon": "desk",
+      "tone": "teal",
+      "tagline": "PDF 비교·파일 관리·문서 검색을 한 화면에 모은 Windows 문서 유틸리티",
+      "summary": [
+        "PyQt6 기반의 Windows 데스크톱 문서 유틸리티입니다. PDF 비교, 파일 관리자, 문서 검색 등의 기능을 하나의 통합된 화면에서 제공합니다."
+      ],
+      "features": [
+        { "title": "PDF 지정 영역 비교", "text": "두 PDF에서 지정한 영역을 추출해 정규화한 뒤 문자열 단위로 정밀하게 비교합니다." },
+        { "title": "PDF 전체 비교", "text": "페이지 단위로 전체를 비교하며, 헤더/푸터 영역은 드래그로 제외할 수 있습니다." },
+        { "title": "파일 관리자", "text": "듀얼 패널 파일 탐색기로 복사·이동·삭제(휴지통)와 키보드 단축키를 지원합니다." },
+        { "title": "문서 찾기", "text": "폴더를 색인해 PDF·DOCX·HWP·HWPX·XLSX 등 문서 본문을 전문 검색(FTS5)합니다." }
+      ],
+      "screenshots": [],
+      "platforms": [
+        "Windows 10/11",
+        "검색 지원 형식: txt, md, pdf, docx, doc, hwp, hwpx, cell, xlsx, xls 등"
+      ],
+      "notes": [],
+      "source": "https://github.com/knhanul/DeskUtil"
+    },
+    {
+      "slug": "track",
+      "name": "nuni track",
+      "category": "mobile",
+      "featured": true,
+      "order": 4,
+      "icon": "route",
+      "tone": "green",
+      "tagline": "자전거·산책·러닝·등산의 경로와 활동을 기록하는 네이티브 앱",
+      "summary": [
+        "자전거, 산책, 러닝, 등산, 트레일러닝의 경로와 활동을 기록하는 Android·iPhone용 네이티브 앱입니다. 웹앱이나 WebView 앱이 아니라 Expo/React Native로 만든 네이티브 프로젝트입니다.",
+        "지도는 MapLibre와 OpenStreetMap 기반 OpenFreeMap을 사용해 별도 API 키 없이 동작합니다."
+      ],
+      "features": [
+        { "title": "활동 기록", "text": "활동 유형을 고르고 기록을 시작·일시정지·재개·종료합니다." },
+        { "title": "백그라운드 위치 추적", "text": "화면을 꺼도 위치를 기록하며, 위치를 받는 즉시 기기 안(SQLite)에 저장합니다." },
+        { "title": "대시보드 지표", "text": "현재 속도, 러닝 페이스, 거리, 전체·활동·휴식 시간, 평균·최고 속도, 올라간 높이, GPS 포인트 수를 보여 줍니다." },
+        { "title": "기록 목록·동기화", "text": "완료한 활동 목록과 업로드 대기열을 두고, 인터넷이 연결되면 서버와 동기화하도록 설계했습니다." }
+      ],
+      "screenshots": [],
+      "platforms": [
+        "Android (APK)",
+        "iOS (소스 빌드 지원, 배포 전)"
+      ],
+      "notes": [
+        "GPX 가져오기/내보내기, 사진·음성 저장은 아직 포함하지 않았습니다."
+      ],
+      "source": "https://github.com/knhanul/Track"
+    },
+    {
+      "slug": "weather",
+      "name": "기상허브",
+      "nameEn": "Weather Data Hub",
+      "category": "web",
+      "featured": true,
+      "order": 5,
+      "icon": "weather",
+      "tone": "navy",
+      "tagline": "공식 ASOS 관측 자료를 한 곳에서 수집·조회·다운로드하는 기상데이터 플랫폼",
+      "summary": [
+        "기상청 공식 ASOS 관측 자료를 한 곳에서 수집하고 표준화해 제공하는 공통 기상데이터 허브입니다. 업무시스템(구내식당 등)은 기상청이 아니라 이 허브의 API만 호출합니다.",
+        "관측값이 없는 강수를 0으로 바꾸지 않고 빈 구간을 그대로 보여 주는 등, 원본 관측 자료를 정직하게 다루는 것을 원칙으로 합니다."
+      ],
+      "features": [
+        { "title": "대시보드", "text": "지점·기간을 골라 기온/강수 그래프를 보고, 지점별 수집 상태 카드로 지연 여부를 확인합니다." },
+        { "title": "시간자료·일자료 조회", "text": "관측지점과 기간을 지정해 시간 단위·일 단위 관측 자료를 조회합니다." },
+        { "title": "다운로드", "text": "필요한 기간의 관측 자료를 내려받습니다." },
+        { "title": "미적재 현황", "text": "관측지점별로 저장되지 않은 시각·날짜를 구간으로 보여 주고, 선택한 구간만 수집합니다." },
+        { "title": "자료수집·수집이력", "text": "공공데이터포털을 통해 공식 자료를 수집하고 이력을 관리합니다." },
+        { "title": "업무시스템용 API", "text": "구내식당·시설·에너지 등 다른 시스템은 HTTP 조회 API만 호출합니다." }
+      ],
+      "screenshots": [
+        { "src": "/assets/img/products/weather-dashboard.webp", "width": 1280, "height": 800, "alt": "기상허브 대시보드: 지점별 상태 카드와 최근 3일 기온·강수 그래프", "caption": "대시보드" },
+        { "src": "/assets/img/products/weather-gaps.webp", "width": 1280, "height": 800, "alt": "기상허브 미적재 현황 화면: 지점별 적재율과 미적재 구간 목록", "caption": "미적재 현황" }
+      ],
+      "platforms": [
+        "웹 브라우저 (PC)",
+        "주소: weather.nuni.co.kr"
+      ],
+      "notes": [],
+      "serviceUrl": "https://weather.nuni.co.kr",
+      "source": "https://github.com/knhanul/weather"
+    },
+    {
+      "slug": "gpx-viewer",
+      "name": "nuni track GPX Viewer",
+      "category": "web",
+      "featured": false,
+      "order": 8,
+      "icon": "mountain",
+      "tone": "green",
+      "tagline": "파일을 서버로 보내지 않고 브라우저 안에서 분석하는 자전거 라이더용 GPX 뷰어",
+      "summary": [
+        "자전거 라이더를 위한 브라우저 기반 GPX 뷰어입니다. GPX 파일은 서버로 업로드되지 않으며, 모든 분석은 브라우저 안에서만 처리됩니다.",
+        "Leaflet과 OpenStreetMap을 사용해 외부 지도 API 키 없이 동작하고, PWA로 홈 화면에 설치할 수 있습니다."
+      ],
+      "features": [
+        { "title": "여러 GPX 한 번에", "text": "파일을 여러 개 올려 경로마다 색을 달리 표시하고, 12개 이상 지표로 비교합니다." },
+        { "title": "고도 분석", "text": "보정한 고도/경사도 차트와 1km 구간 통계를 보여 줍니다." },
+        { "title": "주요 오르막 자동 탐지", "text": "거리·상승고도·평균 경사 기준으로 오르막을 찾아 난이도별 카드로 정리합니다." },
+        { "title": "선택 구간 분석", "text": "드래그/탭으로 구간을 고르면 자전거 친화적인 자연어 요약을 보여 줍니다." },
+        { "title": "모바일 주행 모드", "text": "큰 글씨, 현재 위치, 남은 오르막, 경로 이탈(100m 이상) 참고 안내를 제공합니다." },
+        { "title": "PWA·반응형", "text": "오프라인에서도 기본 동작하고, PC/모바일 화면에 맞춰 자동 전환합니다." }
+      ],
+      "screenshots": [],
+      "platforms": [
+        "최신 웹 브라우저 (PC · 모바일)",
+        "PWA 설치 지원"
+      ],
+      "notes": [
+        "현재 공개된 온라인 주소는 없습니다."
+      ],
+      "source": "https://github.com/knhanul/GPXViewer"
+    },
+    {
+      "slug": "nunitrader",
+      "name": "NuniTrader",
+      "category": "web",
+      "featured": false,
+      "order": 9,
+      "icon": "chart",
+      "tone": "navy",
+      "tagline": "한국투자증권(KIS) API로 종목·현재가·투자자 동향을 조회하는 웹 앱",
+      "summary": [
+        "한국투자증권(KIS) API를 활용한 주식 정보 조회 웹 애플리케이션입니다. 종목 검색, 현재가 조회, 투자자 동향 분석 기능을 제공합니다."
+      ],
+      "features": [
+        { "title": "종목 검색", "text": "종목명으로 KOSPI/KOSDAQ 종목을 검색합니다." },
+        { "title": "현재가 조회", "text": "KIS API로 시가·종가를 조회합니다." },
+        { "title": "투자자 동향", "text": "개인·외국인·기관별 일자별 매매동향을 분석합니다." },
+        { "title": "데이터 그리드·CSV", "text": "Toast UI Grid로 표를 보여 주고, 조회 데이터를 CSV로 내보냅니다." }
+      ],
+      "screenshots": [],
+      "platforms": [
+        "직접 실행형 웹 앱 (Python 3.8+, FastAPI)",
+        "본인의 한국투자증권 KIS API 키 필요"
+      ],
+      "notes": [
+        "현재 공개된 온라인 주소는 없습니다."
+      ],
+      "source": "https://github.com/knhanul/NuniTrader"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "_comment": "사이트 공통 정보입니다. 문구를 바꾸려면 이 파일만 수정한 뒤 다시 배포하세요.",
+  "name": "nuni",
+  "url": "https://www.nuni.co.kr",
+  "tagline": "일상과 일을 편하게 만드는 작은 소프트웨어",
+  "heroTitle": [
+    "일상과 일을 편하게 만드는",
+    "작은 소프트웨어"
+  ],
+  "description": "nuni는 Windows 데스크톱 앱, 모바일 앱, 웹 서비스를 직접 만들고 운영하는 소프트웨어 브랜드입니다. 제품 소개와 다운로드, 운영 중인 서비스를 한 곳에서 안내합니다.",
+  "heroLead": "Windows 데스크톱 앱부터 모바일 앱, 웹 서비스까지.\nnuni가 직접 만들고 운영하는 제품을 한 곳에서 소개합니다.",
+  "ogImage": "/assets/og.png",
+  "contact": {
+    "email": "",
+    "_emailTodo": "TODO: 공개할 문의 이메일이 정해지면 위 email 값에 적어 주세요. 비어 있으면 사이트에는 GitHub 링크만 표시됩니다.",
+    "github": "https://github.com/knhanul",
+    "githubLabel": "github.com/knhanul"
+  },
+  "services": [
+    {
+      "id": "weather",
+      "name": "기상허브",
+      "nameEn": "Weather Data Hub",
+      "url": "https://weather.nuni.co.kr",
+      "host": "weather.nuni.co.kr",
+      "status": "live",
+      "statusLabel": "운영 중",
+      "description": "공식 ASOS 관측 자료를 수집·조회·다운로드하는 공통 기상데이터 플랫폼입니다.",
+      "productSlug": "weather",
+      "icon": "weather"
+    },
+    {
+      "id": "repo",
+      "name": "파일 저장소",
+      "nameEn": "NUNI Repository",
+      "url": "https://repo.nuni.co.kr",
+      "host": "repo.nuni.co.kr",
+      "status": "login",
+      "statusLabel": "로그인 필요",
+      "description": "파일과 개발 프로젝트를 한 곳에서 관리하는 저장소입니다. 제품 설치 파일도 이곳에서 제공합니다.",
+      "icon": "folder"
+    }
+  ]
+}

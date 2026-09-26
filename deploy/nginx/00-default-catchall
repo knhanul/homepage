@@ -1,0 +1,14 @@
+# /etc/nginx/sites-available/00-default-catchall  (sites-enabled 에 심볼릭 링크)
+# 등록되지 않은 도메인/IP로 들어온 요청은 응답하지 않습니다.
+# (이 설정이 없으면 모르는 호스트명에도 weather 서비스가 보입니다.)
+server {
+    listen 80 default_server;
+    server_name _;
+    return 444;
+}
+
+server {
+    listen 443 ssl default_server;
+    server_name _;
+    ssl_reject_handshake on;
+}
